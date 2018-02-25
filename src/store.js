@@ -1,5 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import ReduxThunk from 'redux-thunk'
+import allReducers from './reducers'
+import WordsReducers from './reducers'
 
 import reducers from './reducers'
 const reducer = combineReducers(reducers)
@@ -11,6 +13,6 @@ const enhancer = compose(
   devTools
 )
 
-const store = createStore(reducer, enhancer)
+const store = createStore(allReducers)
 
 export default store

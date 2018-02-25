@@ -11,8 +11,11 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+        The game goes as follows. The computer selects a random word.
+        The player guesses letters. Guess correct, and more of the word is shown.
+        Guess incorrectly six times, and the player loses.
         </p>
+        <p> You missed: </p>
       </div>
     );
   }

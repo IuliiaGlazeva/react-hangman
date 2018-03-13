@@ -1,12 +1,7 @@
-import {combineReducers} from 'redux';
-import HangStepsReducers from './hangSteps';
-import WordsReducers from './words';
-import TitleReducers from './title.js';
+import guessWord from './guessWord'
+import word from './word'
 
-const allReducers = combineReducers ({
-  steps: HangStepsReducers,
-  words: WordsReducers,
-  title: TitleReducers
-});
-
-export default allReducers
+export default {
+  guessWord,
+  word
+}

@@ -1,5 +1,4 @@
-export default function (){
-  return ['jawbreaker',
+const word = ['jawbreaker',
   'buzzwords', 'transplant',
   'unworthy', 'nightclub',
   'nowadays', 'microwave',
@@ -23,4 +22,4 @@ export default function (){
   'tray',
   'tree',
   ]
-}
+export const RandomWord = word[Math.floor(Math.random() * word.length)]
